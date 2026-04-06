@@ -1,0 +1,24 @@
+{
+  "name": "Nexus Agency",
+  "short_name": "Nexus",
+  "description": "Strategy, design, and technology for ambitious brands.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/favicon-96x96.png", "sizes": "96x96",   "type": "image/png" },
+    { "src": "/icon-192x192.png",  "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512x512.png",  "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.jpg",
+      "sizes": "1280x800",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Nexus Agency homepage"
+    }
+  ]
+}
