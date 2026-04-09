@@ -19,14 +19,15 @@ export default defineConfig(({ mode }) => {
 
     resolve: {
       alias: {
-        '@':            path.resolve(__dirname, './src'),
-        '@components':  path.resolve(__dirname, './src/components'),
-        '@pages':       path.resolve(__dirname, './src/pages'),
-        '@hooks':       path.resolve(__dirname, './src/hooks'),
-        '@context':     path.resolve(__dirname, './src/context'),
-        '@utils':       path.resolve(__dirname, './src/utils'),
-        '@data':        path.resolve(__dirname, './src/data'),
-        '@assets':      path.resolve(__dirname, './src/assets'),
+        '@': path.resolve(__dirname, './src'),
+        '@components': path.resolve(__dirname, './src/component'),
+        '@sections': path.resolve(__dirname, './src/component/sections'),
+        '@pages': path.resolve(__dirname, './src/pages'),
+        '@hooks': path.resolve(__dirname, './src/hooks'),
+        '@context': path.resolve(__dirname, './src/context'),
+        '@utils': path.resolve(__dirname, './src/utils'),
+        '@data': path.resolve(__dirname, './src/data'),
+        '@assets': path.resolve(__dirname, './src/assets'),
       },
     },
 
@@ -50,9 +51,9 @@ export default defineConfig(({ mode }) => {
             'vendor-icons': ['lucide-react'],
           },
           // Asset naming with content hash for cache busting
-          chunkFileNames:  'assets/js/[name]-[hash].js',
-          entryFileNames:  'assets/js/[name]-[hash].js',
-          assetFileNames:  'assets/[ext]/[name]-[hash].[ext]',
+          chunkFileNames: 'assets/js/[name]-[hash].js',
+          entryFileNames: 'assets/js/[name]-[hash].js',
+          assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
         },
       },
     },
@@ -85,14 +86,7 @@ export default defineConfig(({ mode }) => {
 
     // ── Optimized deps pre-bundling ──────────────────────────────
     optimizeDeps: {
-      include: [
-        'react',
-        'react-dom',
-        'react-router-dom',
-        'framer-motion',
-        'lucide-react',
-        'clsx',
-      ],
+      include: ['react', 'react-dom', 'react-router-dom', 'framer-motion', 'lucide-react', 'clsx'],
     },
   }
 })

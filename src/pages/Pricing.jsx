@@ -2,7 +2,6 @@ import PageTransition from '@components/common/PageTransition'
 import { useSEO } from '@hooks/useSEO'
 import PageHero from '@components/common/PageHero'
 import CTABandSection from '@components/sections/CTABandSection'
-import SectionTitle from '@components/common/SectionTitle'
 import ScrollReveal from '@components/common/ScrollReveal'
 import Button from '@components/common/Button'
 import { pricingPlans } from '@data/content'
@@ -113,7 +112,7 @@ export default function Pricing() {
           <ScrollReveal className="mt-20 text-center">
             <div className="bg-slate-50 dark:bg-slate-800 rounded-2xl p-10">
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-                What's Included in Every Plan?
+                What&apos;s Included in Every Plan?
               </h3>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
                 <li className="flex items-center gap-3">

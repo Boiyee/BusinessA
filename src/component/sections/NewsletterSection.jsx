@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Mail, Check, AlertCircle } from 'lucide-react'
 import { motion } from 'framer-motion'
-import SectionTitle from '@components/common/SectionTitle'
 import ScrollReveal from '@components/common/ScrollReveal'
 
 export default function NewsletterSection() {

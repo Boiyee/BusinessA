@@ -1,8 +1,7 @@
 import PageTransition from '@components/common/PageTransition'
 import { useSEO } from '@hooks/useSEO'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, Globe, Users, TrendingUp } from 'lucide-react'
-import PageHero from '@components/common/PageHero'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import CTABandSection from '@components/sections/CTABandSection'
 import Badge from '@components/common/Badge'
 import Button from '@components/common/Button'
@@ -15,14 +14,20 @@ export default function CaseStudyDetail() {
   const navigate = useNavigate()
   
   const caseStudy = portfolioItems.find((item) => item.id === parseInt(id))
-  
+
+  useSEO({
+    title: caseStudy ? `${caseStudy.title} — Case Study | Nexus Agency` : 'Case Study Not Found',
+    description: caseStudy ? caseStudy.challenge : 'Case study not found',
+    keywords: caseStudy ? [...caseStudy.tags, 'case study', 'web design', 'branding'] : [],
+  })
+
   if (!caseStudy) {
     return (
       <PageTransition>
         <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
           <p className="text-slate-600 dark:text-slate-400 mb-8">
-            The case study you're looking for doesn't exist.
+            The case study you are looking for doesn&apos;t exist.
           </p>
           <Link to="/portfolio">
             <Button leftIcon={<ArrowLeft size={16} />}>Back to Portfolio</Button>
@@ -31,12 +36,6 @@ export default function CaseStudyDetail() {
       </PageTransition>
     )
   }
-
-  useSEO({
-    title: `${caseStudy.title} — Case Study | Nexus Agency`,
-    description: caseStudy.challenge,
-    keywords: [...caseStudy.tags, 'case study', 'web design', 'branding'],
-  })
 
   const relatedProjects = portfolioItems
     .filter((item) => item.id !== caseStudy.id)
@@ -189,7 +188,7 @@ export default function CaseStudyDetail() {
             <ScrollReveal>
               <div className="max-w-3xl mx-auto bg-gradient-to-br from-brand-50 to-slate-50 dark:from-brand-900/20 dark:to-slate-800 rounded-3xl p-12 border border-brand-200 dark:border-brand-800">
                 <blockquote className="text-2xl font-semibold text-slate-900 dark:text-white mb-6 italic">
-                  "{caseStudy.testimonialQuote}"
+                  &quot;{caseStudy.testimonialQuote}&quot;
                 </blockquote>
                 <div>
                   <div className="font-semibold text-slate-900 dark:text-white">

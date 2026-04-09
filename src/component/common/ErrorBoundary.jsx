@@ -35,7 +35,7 @@ export default class ErrorBoundary extends Component {
               Oops! Something went wrong
             </h1>
             <p className="text-slate-600 dark:text-slate-300 mb-8">
-              We're sorry for the inconvenience. An unexpected error has occurred.
+              We&apos;re sorry for the inconvenience. An unexpected error has occurred.
             </p>
             {process.env.NODE_ENV === 'development' && (
               <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-left">
