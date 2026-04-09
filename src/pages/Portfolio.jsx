@@ -42,8 +42,8 @@ function Lightbox({ item, onClose, onPrev, onNext }) {
           <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-6">{item.description}</p>
           <div className="mt-auto flex items-center justify-between">
             <span className="text-xs text-slate-400 font-medium">{item.year}</span>
-            <Link to="/contact" onClick={onClose}>
-              <Button size="sm" rightIcon={<ArrowRight size={14} />}>Start a similar project</Button>
+            <Link to={`/portfolio/${item.id}`} onClick={onClose}>
+              <Button size="sm" rightIcon={<ArrowRight size={14} />}>View Full Case Study</Button>
             </Link>
           </div>
         </div>

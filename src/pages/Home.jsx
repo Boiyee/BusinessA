@@ -5,6 +5,7 @@ import ServicesSection     from '@components/sections/ServicesSection'
 import PortfolioSection    from '@components/sections/PortfolioSection'
 import TestimonialsSection from '@components/sections/TestimonialsSection'
 import TeamSection         from '@components/sections/TeamSection'
+import NewsletterSection   from '@components/sections/NewsletterSection'
 import CTABandSection      from '@components/sections/CTABandSection'
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <PortfolioSection />
       <TestimonialsSection />
       <TeamSection />
+      <NewsletterSection />
       <CTABandSection />
     </PageTransition>
   )
