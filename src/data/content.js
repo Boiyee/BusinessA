@@ -4,10 +4,10 @@
 
 // ── Stats ────────────────────────────────────────────────────────
 export const stats = [
-  { value: 150,  suffix: '+',  label: 'Projects Delivered' },
-  { value: 98,   suffix: '%',  label: 'Client Satisfaction' },
-  { value: 12,   suffix: 'yr', label: 'Years of Experience' },
-  { value: 40,   suffix: '+',  label: 'Team Members' },
+  { value: 150, suffix: '+', label: 'Projects Delivered' },
+  { value: 98, suffix: '%', label: 'Client Satisfaction' },
+  { value: 12, suffix: 'yr', label: 'Years of Experience' },
+  { value: 40, suffix: '+', label: 'Team Members' },
 ]
 
 // ── Services ─────────────────────────────────────────────────────
@@ -27,7 +27,12 @@ export const services = [
     title: 'Web Design & Dev',
     description:
       'Pixel-perfect, performant websites and applications built with modern technologies that scale.',
-    features: ['UX / UI design', 'React development', 'CMS integration', 'Performance optimisation'],
+    features: [
+      'UX / UI design',
+      'React development',
+      'CMS integration',
+      'Performance optimisation',
+    ],
     color: 'teal',
   },
   {
@@ -80,14 +85,17 @@ export const portfolioItems = [
     year: 2024,
     featured: true,
     // Case study details
-    challenge: 'Meridian Finance needed a modern platform to compete with legacy fintech providers while handling complex real-time transactions and portfolio management.',
-    solution: 'We designed and built a React-based dashboard with real-time data synchronization, advanced charting, and a frictionless UX built with accessibility as a priority.',
+    challenge:
+      'Meridian Finance needed a modern platform to compete with legacy fintech providers while handling complex real-time transactions and portfolio management.',
+    solution:
+      'We designed and built a React-based dashboard with real-time data synchronization, advanced charting, and a frictionless UX built with accessibility as a priority.',
     results: [
       { metric: '3.2M', description: 'Daily active transactions' },
       { metric: '98.7%', description: 'Uptime achieved' },
       { metric: '340%', description: 'Increase in engagement' },
     ],
-    testimonialQuote: 'Nexus transformed our product completely. The team's strategic thinking and technical execution are in a league of their own.',
+    testimonialQuote:
+      "Nexus transformed our product completely. The team's strategic thinking and technical execution are in a league of their own.",
     testimonialAuthor: 'Sarah Chen',
     testimonialRole: 'CEO, Meridian Finance',
     technologies: ['React', 'Node.js', 'WebSocket', 'PostgreSQL', 'Redis'],
@@ -101,14 +109,17 @@ export const portfolioItems = [
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
     year: 2024,
     featured: true,
-    challenge: 'Healthcare apps face adoption challenges due to complex UX. Bloom needed an app that felt intuitive while securely handling sensitive health data.',
-    solution: 'We created a delightful React Native app with HIPAA compliance, biometric authentication, and an AI-powered insights engine that turns raw health data into actionable recommendations.',
+    challenge:
+      'Healthcare apps face adoption challenges due to complex UX. Bloom needed an app that felt intuitive while securely handling sensitive health data.',
+    solution:
+      'We created a delightful React Native app with HIPAA compliance, biometric authentication, and an AI-powered insights engine that turns raw health data into actionable recommendations.',
     results: [
       { metric: '200K+', description: 'Active users' },
       { metric: '4.8★', description: 'App Store rating' },
       { metric: '68%', description: 'Daily active users' },
     ],
-    testimonialQuote: 'From the first discovery call to launch day, the communication was exceptional. They challenge your thinking and help you arrive at better solutions.',
+    testimonialQuote:
+      "From the first discovery call to launch day, the communication was exceptional. They don't just execute briefs — they challenge your thinking and help you arrive at better solutions.",
     testimonialAuthor: 'Amara Osei',
     testimonialRole: 'Founder, Bloom Health',
     technologies: ['React Native', 'TypeScript', 'Firebase', 'TensorFlow Lite', 'Swift'],
@@ -121,14 +132,17 @@ export const portfolioItems = [
     description: 'Complete brand overhaul that drove 240% increase in online revenue.',
     image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&q=80',
     year: 2023,
-    challenge: 'Crest Retail was losing market share to newer D2C competitors with stronger brand positioning. Their identity felt dated and disconnected from customers.',
-    solution: 'We conducted comprehensive brand research, redefined their positioning, created a modern visual identity, and supported launch with integrated marketing campaigns across all touchpoints.',
+    challenge:
+      'Crest Retail was losing market share to newer D2C competitors with stronger brand positioning. Their identity felt dated and disconnected from customers.',
+    solution:
+      'We conducted comprehensive brand research, redefined their positioning, created a modern visual identity, and supported launch with integrated marketing campaigns across all touchpoints.',
     results: [
       { metric: '240%', description: 'Revenue increase (first year)' },
       { metric: '89%', description: 'Brand recall improvement' },
       { metric: '156K', description: 'New customers acquired' },
     ],
-    testimonialQuote: 'Our new brand identity has been a game-changer. Customer recognition is up and our team finally feels proud to share our materials.',
+    testimonialQuote:
+      'Our new brand identity has been a game-changer. Customer recognition is up and our team finally feels proud to share our materials.',
     testimonialAuthor: 'David Park',
     testimonialRole: 'VP Marketing, Crest Retail',
     technologies: ['Figma', 'Webflow', 'Klaviyo', 'Shopify Plus'],
@@ -141,14 +155,17 @@ export const portfolioItems = [
     description: 'Supply chain visualisation platform used by 500+ enterprises globally.',
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
     year: 2023,
-    challenge: 'Logistics operators needed real-time visibility into complex multierror supply chains, but existing tools were clunky and required extensive training.',
-    solution: 'We built an elegant, intuitive SaaS platform with real-time tracking, intelligent alerting, and predictive analytics powered by machine learning algorithms.',
+    challenge:
+      'Logistics operators needed real-time visibility into complex multierror supply chains, but existing tools were clunky and required extensive training.',
+    solution:
+      'We built an elegant, intuitive SaaS platform with real-time tracking, intelligent alerting, and predictive analytics powered by machine learning algorithms.',
     results: [
       { metric: '500+', description: 'Enterprise customers' },
       { metric: '10M+', description: 'Data points processed daily' },
       { metric: '35%', description: 'Operational cost reduction (avg)' },
     ],
-    testimonialQuote: 'The platform handles over 10 million data points daily without breaking a sweat. Their attention to performance and scalability was exactly what we needed.',
+    testimonialQuote:
+      'The platform handles over 10 million data points daily without breaking a sweat. Their attention to performance and scalability was exactly what we needed.',
     testimonialAuthor: 'Marcus Johnson',
     testimonialRole: 'CTO, Apex Logistics',
     technologies: ['React', 'Python', 'Kubernetes', 'Apache Kafka', 'TimescaleDB'],
@@ -161,14 +178,17 @@ export const portfolioItems = [
     description: 'Sustainable food brand identity and national launch campaign.',
     image: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&q=80',
     year: 2023,
-    challenge: 'New sustainable food brand needed to differentiate in a crowded market while balancing premium positioning with mass-market appeal.',
-    solution: 'Strategy-first approach: defined core values, created distinctive visual identity, designed packaging system, and orchestrated integrated launch across retail, digital, and content channels.',
+    challenge:
+      'New sustainable food brand needed to differentiate in a crowded market while balancing premium positioning with mass-market appeal.',
+    solution:
+      'Strategy-first approach: defined core values, created distinctive visual identity, designed packaging system, and orchestrated integrated launch across retail, digital, and content channels.',
     results: [
       { metric: '2,400+', description: 'Retail locations (6 months)' },
       { metric: '78%', description: 'Brand awareness (target demographic)' },
       { metric: '12M', description: 'Impressions (campaign)' },
     ],
-    testimonialQuote: 'Worth every penny of the investment. Verdant is now our flagship sustainable brand.',
+    testimonialQuote:
+      'Worth every penny of the investment. Verdant is now our flagship sustainable brand.',
     testimonialAuthor: 'Lisa Rodriguez',
     testimonialRole: 'CMO, Verdant Foods',
     technologies: ['Figma', 'Adobe Suite', 'Mailchimp', 'Shopify'],
@@ -181,14 +201,17 @@ export const portfolioItems = [
     description: 'Interactive learning platform with 200K+ active student users.',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80',
     year: 2024,
-    challenge: 'EdTech platforms struggle with low engagement and retention. Orbit needed to make learning addictive without compromising educational integrity.',
-    solution: 'We designed and built an iOS-first app with sophisticated gamification mechanics, adaptive learning paths powered by AI, and peer social features that drive organic growth.',
+    challenge:
+      'EdTech platforms struggle with low engagement and retention. Orbit needed to make learning addictive without compromising educational integrity.',
+    solution:
+      'We designed and built an iOS-first app with sophisticated gamification mechanics, adaptive learning paths powered by AI, and peer social features that drive organic growth.',
     results: [
       { metric: '200K+', description: 'Active student users' },
       { metric: '4.9★', description: 'App Store rating' },
       { metric: '47min', description: 'Avg daily session time' },
     ],
-    testimonialQuote: 'The engagement metrics have exceeded all our projections. Students are learning faster than ever.',
+    testimonialQuote:
+      'The engagement metrics have exceeded all our projections. Students are learning faster than ever.',
     testimonialAuthor: 'Dr. Elena Volkov',
     testimonialRole: 'CEO, Orbit EdTech',
     technologies: ['React Native', 'Python', 'GraphQL', 'Firebase ML Kit'],
@@ -205,7 +228,7 @@ export const testimonials = [
     role: 'CEO, Meridian Finance',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80',
     quote:
-      'Nexus transformed our product completely. The team's strategic thinking and technical execution are in a league of their own. We saw a 3× increase in user engagement within the first quarter.',
+      "Nexus transformed our product completely. The team's strategic thinking and technical execution are in a league of their own. We saw a 3× increase in user engagement within the first quarter.",
     rating: 5,
     company: 'Meridian Finance',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
@@ -229,7 +252,7 @@ export const testimonials = [
     role: 'Founder, Bloom Health',
     avatar: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&q=80',
     quote:
-      'From the first discovery call to launch day, the communication was exceptional. They don't just execute briefs — they challenge your thinking and help you arrive at better solutions.',
+      "From the first discovery call to launch day, the communication was exceptional. They don't just execute briefs — they challenge your thinking and help you arrive at better solutions.",
     rating: 5,
     company: 'Bloom Health',
     hasVideo: false,
